@@ -1,15 +1,8 @@
 language: nodejs
 node_js: 
-- "9"
+- "stable"
 deploy:
 provider: script
 script: ./script/deploy
 skip_cleanup: true
 on
-tags: true
-notifications:
-email:
-  recipients:
-     - aniket@elemential.com
-on-success: change
-on-failure: always
