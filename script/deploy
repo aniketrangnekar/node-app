@@ -7,8 +7,7 @@ ssh ubuntu@13.113.148.171 <<EOF
     . ~/.nvm/nvm.sh
     nvm install v10.11.0
     npm install
-    npm install -g forever
-    forever restart ecosystem.config.js
-    forever list
+    npm install -g nodemon pm2
+    pm2 restart ecosystem.config.js
     exit
 EOF
